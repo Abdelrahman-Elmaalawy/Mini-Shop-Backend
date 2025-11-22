@@ -1,7 +1,0 @@
-{
-  "buildSteps": [
-    "composer install --no-dev --optimize-autoloader"
-  ],
-  "startCommand": "php-fpm",
-  "rootDirectory": "./"
-}
