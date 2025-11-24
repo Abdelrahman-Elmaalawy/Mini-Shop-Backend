@@ -1,0 +1,12 @@
+services:
+  - name: mini-shop-backend
+    github:
+      branch: main
+      repo: Abdelrahman-Elmaalawy/Mini-Shop-Backend
+    instance_count: 1
+    instance_size_slug: basic
+    build_command: "composer install --no-dev --optimize-autoloader"
+    run_command: "php-fpm"
+    document_root: "public"
+    routes:
+      - path: /
